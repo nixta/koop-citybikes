@@ -1,0 +1,37 @@
+{
+  "name": "koop-citybikes",
+  "version": "0.0.1",
+  "description": "A citybikes wrapper for koop ",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "dependencies": {
+    "koop-server": "https://github.com/Esri/koop-server/tarball/master",
+    "citybikes-js": "0.1.2",
+    "config": "~0.4.35",
+    "ejs": "~1.0.0",
+    "sphericalmercator": "~1.0.2",
+    "node.extend": "~1.0.10"
+  },
+  "author": {
+    "name": "Nick Furness"
+  },
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "supertest": "~0.11.0",
+    "should": "~3.3.1",
+    "yaml": "~0.2.3"
+  },
+  "readme": "# koop-citybikes\n\n## A simple Citybik.es provider for Koop\n\n## For Developing\n\n## For use within koop\n\n  ```\n    # clone Koop:\n    git clone git@github.com:Esri/koop.git\n    cd koop\n\n    # install depencencies \n    npm install \n\n    # install koop-citybikes\n    npm install https://github.com/nixta/koop-citybikes/taball/master\n\n    # start the koop server\n    node server.js \n  ```\n",
+  "readmeFilename": "README.md",
+  "_id": "koop-github@0.0.1",
+  "dist": {
+    "shasum": "75a22cb7311dab347cdf7df9cf53b6f21d9e9982"
+  },
+  "_from": "https://github.com/chelm/koop-github/tarball/master",
+  "_resolved": "https://github.com/chelm/koop-github/tarball/master"
+}
