@@ -21,8 +21,7 @@ function sendError(req, res){
 };
 
 function getNetworks(req, res, forFeatureServer) {
-  var callback = req.query.callback;//,
-      // self = this;
+  var callback = req.query.callback;
   delete req.query.callback;
 
   Citybikes.findNetworks(req.query, function(err, networks) {
@@ -40,8 +39,7 @@ function getNetworks(req, res, forFeatureServer) {
 }
 
 function getStations(req, res, forFeatureServer) {
-  var callback = req.query.callback;//, 
-      // self = this;
+  var callback = req.query.callback;
   delete req.query.callback;
 
   Citybikes.findStations(req.params.networkName, req.query, function(err, stations) {
