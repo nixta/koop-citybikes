@@ -1,42 +1,13 @@
 module.exports = {
-  
-  'get /citybikes/': {
-    action: 'index'
-  },
-
-  'get /citybikes': {
-    action: 'index'
-  },
-
-  'get /citybikes/networks': {
-    action: 'networks'
-  },
-
-  'get /citybikes/networks/FeatureServer': {
-    action: 'featureservice'
-  },
-
-  'get /citybikes/networks/FeatureServer/:layer': {
-    action: 'featureservice'
-  },
-
-  'get /citybikes/networks/FeatureServer/:layer/:method': {
-    action: 'featureservice'
-  },
-
-  'get /citybikes/network/:networkName': {
-    action: 'stations'
-  },
-
-  'get /citybikes/network/:networkName/FeatureServer': {
-    action: 'featureservice'
-  },
-
-  'get /citybikes/network/:networkName/FeatureServer/:layer/:method': {
-    action: 'featureservice'
-  },
-
-  'get /citybikes/network/:networkName/FeatureServer/:layer': {
-    action: 'featureservice'
-  }
+  'get /citybikes/': 'index',
+  'get /citybikes': 'index',
+  'get /citybikes/networks/': 'networks',
+  'get /citybikes/networks': 'networks',
+  'get /citybikes/networks/FeatureServer': 'featureservice',
+  'get /citybikes/networks/FeatureServer/:layer': 'featureservice',
+  'get /citybikes/networks/FeatureServer/:layer/:method': 'featureservice',
+  'get /citybikes/network/:networkName': 'stations',
+  'get /citybikes/network/:networkName/FeatureServer': 'featureservice',
+  'get /citybikes/network/:networkName/FeatureServer/:layer/:method': 'featureservice',
+  'get /citybikes/network/:networkName/FeatureServer/:layer': 'featureservice'
 }
